@@ -91,7 +91,8 @@ def movies_with_directors_set(source)
   # :name and :movies
   #
   # RETURN:
-  #
+  # { :name => "A", :movies => [{ :title => "Test" }] }
+  # becomes... [[{:title => "Test", :director_name => "A"}], ...[], ... []]
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
   set = []
