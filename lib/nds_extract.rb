@@ -73,10 +73,14 @@ def gross_per_studio(collection)
   index = 0 
   sum = 0
   while collection[index] do 
-    if()
-    total[collection[index][:studio]] = collection[index][:worldwide_gross]
+    if total[collection[index][:studio]]
+      total[collection[index][:studio]] += collection[index][:worldwide_gross]
+    else 
+      total[collection[index][:studio]] = collection[index][:worldwide_gross]
+    end 
     index += 1 
   end 
+  total 
 end
 
 def movies_with_directors_set(source)
