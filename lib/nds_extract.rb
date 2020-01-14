@@ -99,6 +99,7 @@ def movies_with_directors_set(source)
   index = 0 
   while source[index] do 
     name = source[index][:name]
+    movie_titles = source[index][:movies]
     index += 1 
   end 
   
