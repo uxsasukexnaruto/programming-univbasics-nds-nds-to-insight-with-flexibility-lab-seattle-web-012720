@@ -98,7 +98,7 @@ def movies_with_directors_set(source)
   set = []
   index = 0 
   while source[index] do 
-    
+    name = source[index][:name]
     index += 1 
   end 
   
